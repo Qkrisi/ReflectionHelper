@@ -7,7 +7,7 @@ local_file = lambda f: \
 setup(
   name = 'ReflectionHelper',
   packages = ['ReflectionHelper'],
-  version = '1.0.1',
+  version = '1.0.2',
   license='MIT',
   description = 'A reflection module based on the C# System.Reflection library',
   long_description=local_file('README.md'),
@@ -15,7 +15,7 @@ setup(
   author = 'Qkrisi',
   author_email = 'qruczkristof@gmail.com',
   url = 'https://github.com/Qkrisi/ReflectionHelper',
-  download_url = 'https://github.com/Qkrisi/ReflectionHelper/archive/v_1_0_1.tar.gz',
+  download_url = 'https://github.com/Qkrisi/ReflectionHelper/archive/v_1_0_2.tar.gz',
   keywords = ['Reflection', 'Helper'],
   install_requires=[
 			'forbiddenfruit',
