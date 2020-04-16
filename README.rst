@@ -380,11 +380,11 @@ Example 2.
             
     Parameters = Ex.GetMethod("M").GetParameters()
     for parameter in Parameters:
-        print(f'Parameter data: name is {parameter.Name}, type if {parameter.ParameterType}, position in method is {parameter.Position}, default value is {parameter.Default}')
+        print(f'Parameter data: name is {parameter.Name}, type is {parameter.ParameterType}, position in method is {parameter.Position}, default value is {parameter.Default}')
         
     #Output
-    #Parameter data: name is p1, type if <class 'int'>, position in method is 0, default value is None
-    #Parameter data: name is p2, type if <class 'bool'>, position in method is 1, default value is None
-    #Parameter data: name is p3, type if None, position in method is 2, default value is None
-    #Parameter data: name is p4, type if None, position in method is 3, default value is Def
+    #Parameter data: name is p1, type is <class 'int'>, position in method is 0, default value is None
+    #Parameter data: name is p2, type is <class 'bool'>, position in method is 1, default value is None
+    #Parameter data: name is p3, type is None, position in method is 2, default value is None
+    #Parameter data: name is p4, type is None, position in method is 3, default value is Def
 
