@@ -1,4 +1,9 @@
 from distutils.core import setup
+import os
+
+local_file = lambda f: \
+    open(os.path.join(os.path.dirname(__file__), f)).read()
+
 setup(
   name = 'ReflectionHelper',
   packages = ['ReflectionHelper'],
