@@ -15,7 +15,7 @@ Usage
 
 Import the module using
 
-.. code:: py
+.. code-block:: python
 
     from ReflectionHelper import *
 
