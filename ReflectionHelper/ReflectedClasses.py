@@ -5,7 +5,7 @@ class MemberInfo:
 	def getClass(t):return type(t) if not type(t) is type else t
 	def checkForSame(invoke, base):
 		if invoke==None:return
-		if MemberInfo.getClass(base)!=MemberInfo.getClass(invoke):raise TypeError("The base and invokation type should be the same")
+		if MemberInfo.getClass(base)!=MemberInfo.getClass(invoke):raise TypeError("The base and invokation type should be the same or None")
 	def checkAttribute(invoke, base, name):
 		if not hasattr(invoke if invoke!=None else base, name): raise AttributeError(f'{"The" if invoke!=None and not type(invoke) is type else "Static"} attribute "{name}" could not be found')
 	def __init__(self, name, e):
