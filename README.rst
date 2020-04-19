@@ -36,7 +36,7 @@ A parent class storing the datas of the reflected values
 FieldInfo
 ~~~~~~~~~
 
-Iherits ``MemberInfo``
+Inherits ``MemberInfo``
 
 A class storing the reflected field
 
