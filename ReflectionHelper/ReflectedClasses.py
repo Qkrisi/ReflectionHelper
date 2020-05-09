@@ -57,6 +57,7 @@ class MethodInfo(MemberInfo):
 		MemberInfo.checkForSame(cl, self.e)
 		MemberInfo.checkAttribute(cl, self.baseType, self.Name)
 		if not type(arr) is list: raise TypeError("InvokeAsync needs a list of arguments")
+		if not self.IsAsync: raise TypeError(f"Method {self.Name} is not asynchronous, use Invoke() instead")
 		return await self.attribute(cl)(*arr)
 	def GetParameters(self, enableSelf = False) -> list:
 		argspec = None
